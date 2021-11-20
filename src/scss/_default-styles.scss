@@ -1,0 +1,73 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $font_base;
+	color: $color_base;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+.container {
+	max-width: $container;
+	padding-left: $containerPadding;
+	padding-right: $containerPadding;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+//region Modal
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	background-color: rgba(#000000, .7);
+	z-index: 99;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .45s ease-out;
+	overflow-y: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	&_shown {
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	&__body {
+		background-color: #ffffff;
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+//endregion
+
+//region Section
+
+//endregion
+
