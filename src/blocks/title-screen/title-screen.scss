@@ -1,0 +1,11 @@
+.title-screen {
+  background-image: url(../img/bg_screen1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &__content {
+    padding-top: 130px;
+    padding-bottom: 230px;
+  }
+}

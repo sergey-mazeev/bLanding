@@ -1,2 +1,11 @@
 mixin header
-	header.header header-meader
+    header.header
+        .header__wrapper
+            .header__logo: a(href="/"): img(src="img/main-logo.png", alt="Удалённые команды как источники прибыли")
+            nav.header__menu
+                ul
+                    li: a(href="#register") Регистрация
+                    li: a(href="#results") Что в результате?
+                    li: a(href="#program") Программа
+                    li: a(href="#contacts") Контакты
+            .header__contacts: a.btn.btn_main(href="tel:+73432904908") + 7 (343) 2-904-908
