@@ -1,24 +1,73 @@
 extends main/page_default
 
 block head
-    title Все страницы
+    title Главная страница
 
 block beforeBody
-    -bodyClasses.push('not-front')
+    -bodyClasses.push('front')
 
 block header
 
 block content
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    +title-screen
+    +block-olist
+    section.block-interaction
+        .container
+            h4.block-interaction__title Интерактив — лучший формат вебинара
+            .block-interaction__list
+                ul
+                    li
+                        img(src="./img/content/interaction1.png", alt="Интерактив — лучший формат вебинара")
+                        p Вы получите доступ в личный кабинет, где пройдете первые шаги по оцифровке бизнеса
+                    li
+                        img(src="./img/content/interaction2.png", alt="Интерактив — лучший формат вебинара")
+                        p Сильное окружение. В проекте участвуют только те, кто готов работать на результат.
+                    li
+                        img(src="./img/content/interaction3.png", alt="Интерактив — лучший формат вебинара")
+                        p Спикеры доступны в личном кабинете в течение 72 часов!
+                    li
+                        img(src="./img/content/interaction4.png", alt="Интерактив — лучший формат вебинара")
+                        p Во время интерактива вы создаете свой план цифрового развития
+            .block-interaction__desc
+                p Интерактив – это начало проекта.<br>Практические действия в кругу замотивированных в успехе.<br>Развиваемся в сильном окружении с экспертами.
+                p Вас ждет интерактив нацеленный на получение каждым участником своего результата.
 
-    .container
+    section.block-img-list#results
+        .container
+            img.block-img-list__img(src="./img/content/round.jpg" alt="ПОРЯДОК И ОЦИФРОВКА БИЗНЕСА")
+            .block-img-list__content
+                h4 Быть обязательно. <br>Потому что <b>вы получите:</b>
+                ul
+                    li Практические советы от представителей бизнеса, как продавать в постоянно меняющейся реальности
+                    li Знания, как управлять подчиненными из любой точки мира и автоматизировать бизнес-процессы в компании
+                    li Анкету по каждому докладу. Заполнив ее вы увидите свои перспективы развития
+                    li Инструкцию к действию на основе ваших анкет после их обработки
+                    li Час индивидуальной консультации от руководителя Академии Батухтина Григория
+                    li Пошаговый план развития, который останется с вами в проектном офисе
 
-        br
-        br
-        br
-        br
-        ol
-            li: a(href="front.html") Главная
+    section.block-bonuses
+        .container
+            h4 Бонусы для участников
+            ul
+                li
+                    img(src="./img/content/bonus1.png" alt="Бонусы для участников")
+                    p Профайл вашей компании, показывающий уровень цифровизации
+                li
+                    img(src="./img/content/bonus2.png" alt="Бонусы для участников")
+                    p Инструкции по развитию вашего бизнеса на основе заполненных анкет
+                li
+                    img(src="./img/content/bonus3.png" alt="Бонусы для участников")
+                    p Сертификат на бесплатную консультацию по настройке бизнес-процессов
 
-block footer
+            a.btn.btn_main(href="#register") Начать развитие
+
+    +schedule
+
+    section#register.block-register
+        .container
+            .block-register__content
+                h4 Регистрация на вебинар: <br>“Удаленные команды как источник прибыли”
+                .block-register__desc Встреча состоится 23 ноября в 19:00 (Мск)
+                img.block-register__img(src="./img/content/robot.png" alt="Регистрация на вебинар: “Удаленные команды как источник прибыли”")
+            .block-register__form <script data-b24-form="inline/36/4s9t0z" data-skip-moving="true">(function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b202041/crm/form/loader_36.js');</script>

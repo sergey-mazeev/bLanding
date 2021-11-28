@@ -5,7 +5,182 @@
   background-position: 50% 50%;
 
   &__content {
+    position: relative;
+    z-index: 2;
+  }
+  &__wrapper {
+    display: flex;
     padding-top: 130px;
     padding-bottom: 230px;
+    position: relative;
+    @media screen and (max-width: 1420px) {
+      padding-bottom: 150px;
+    }
+    @media screen and (max-width: 1300px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    @media screen and (max-width: 970px) {
+      display: block;
+    }
+    @media screen and (max-width: 720px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
+  &__form {
+    width: 410px;
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+    @media screen and (max-width: 1150px) {
+      width: 360px;
+    }
+    @media screen and (max-width: 970px) {
+      width: 100%;
+    }
+  }
+  &__abs {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    right: 260px;
+    @media screen and (max-width: 1420px) {
+      right: 320px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      display: none;
+    }
+    &-desc {
+      position: absolute;
+      right: 100%;
+      bottom: 100px;
+      width: 200px;
+      b {
+        display: block;
+        margin-bottom: 20px;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      span {
+        color: rgba(0, 0, 0, 0.51);
+        font-size: 16px;
+      }
+    }
+    &-img {
+      display: block;
+      @media screen and (max-width: 1420px) {
+        width: 380px;
+      }
+    }
+  }
+}
+
+.title-screen-text {
+  &__desc {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  &__date {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 470px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    strong {
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #EAF3F9;
+      border: 1px solid #FFB800;
+      border-radius: 5px;
+      padding: 15px 20px 13px;
+      margin-right: 20px;
+      font-size: 12px;
+      @media screen and (max-width: 470px) {
+        margin-right: 0;
+        margin-bottom: 14px;
+      }
+    }
+
+    span {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.51);
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    @media screen and (max-width: 1150px) {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 550px) {
+      font-size: 32px;
+      br {
+        display: none;
+      }
+    }
+
+    strong {
+      font-weight: 500;
+      color: #FFB800;
+      text-shadow: 0 0 1em rgba(#FFB800, .5);
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 75px;
+    @media screen and (max-width: 720px) {
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+
+    li {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 33px;
+        height: 33px;
+        background-image: url(data:image/png;base64,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);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .btn {
+    @media screen and (max-width: 970px) {
+      display: none;
+    }
+  }
+
 }
