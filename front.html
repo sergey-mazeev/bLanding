@@ -15,7 +15,7 @@
     <!-- - vendorScripts.push(['js/vendor/imask.js', 'defer']);--><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="css/main.css?1637983158822" rel="stylesheet">
+    <link href="css/main.css?1638058414805" rel="stylesheet">
     <title>Главная страница</title>
   </head>
   <body class="front">
@@ -24,23 +24,36 @@
         <header class="header">
           <div class="header__wrapper">
             <div class="header__logo"><a href="/"><img src="img/main-logo.png" alt="Удалённые команды как источники прибыли"/></a></div>
-            <nav class="header__menu">
+            <nav class="header__menu" id="headerMenu">
+              <button class="header__menu-close" id="menuClose" type="button">Закрыть меню</button>
               <ul>
                 <li><a href="#register">Регистрация</a></li>
                 <li><a href="#results">Что в результате?</a></li>
-                <li><a href="#program">Программа</a></li>
+                <li><a href="#programm">Программа</a></li>
                 <li><a href="#contacts">Контакты</a></li>
               </ul>
             </nav>
             <div class="header__contacts"><a class="btn btn_main" href="tel:+73432904908">+ 7 (343) 2-904-908</a></div>
+            <button class="header__burger" id="headerBurger" type="button">Открыть меню</button>
           </div>
         </header>
-        <div class="title-screen__content">
-          <div class="title-screen__text title-screen-text">
-            <div class="title-screen-text__desc">Практические действия для развития вашего бизнеса</div>
-            <div class="title-screen-text__date"><strong>23 ноября 19:00 по мск</strong><span>онлайн-встреча интерактив</span></div>
-            <div class="title-screen-text__title">Удаленные команды <br> как <strong>источник прибыли</strong></div>
+        <div class="title-screen__wrapper">
+          <div class="title-screen__content">
+            <div class="title-screen__text title-screen-text">
+              <div class="title-screen-text__desc">Интенсив для собственников бизнеса с оборотом от 20 млн в год</div>
+              <div class="title-screen-text__date"><strong>23 ноября 19:00 по мск</strong><span>онлайн-встреча интерактив</span></div>
+              <div class="title-screen-text__title">Удаленные команды <br> как <strong>источник прибыли</strong></div>
+              <ul class="title-screen-text__list">
+                <li>Уделять работе всего от 2х до 4х часов в день</li>
+                <li>Контролировать всего 5 ключевых показателей</li>
+                <li>Иметь время на себя, семью, увлечения и на развитие</li>
+              </ul><a class="btn btn_main" href="#register">Начать развитие</a>
+            </div>
           </div>
+          <div class="title-screen__abs">
+            <div class="title-screen__abs-desc"><b>Григорий Батухтин</b> <span>Директор Академии <br>Цифровой Экономики</span></div><img class="title-screen__abs-img" src="./img/content/title-screen.png" alt="Интенсив для собственников бизнеса с оборотом от 20 млн в год"/>
+          </div>
+          <div class="title-screen__form"><script data-b24-form="inline/36/4s9t0z" data-skip-moving="true">(function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b202041/crm/form/loader_36.js');</script></div>
         </div>
       </div>
     </section>
@@ -49,12 +62,12 @@
         <h2 class="block-olist__title">Порядок и оцифровка бизнеса</h2>
         <div class="block-olist__desc"><b>Как руководителю из любой точки мира</b> управлять многомиллионным бизнесом даже со смартфона?</div>
         <ol class="block-olist__list">
-          <li>уделять работе всего от 2х до 4х часов в день</li>
-          <li>контролировать всего 5 ключевых показателей</li>
-          <li>иметь время на себя, семью, увлечения и на развитие</li>
+          <li>узнайте современные инструменты уменьшения затрат</li>
+          <li>расширьте территориальные границы своего бизнеса</li>
+          <li>получите пошаговый план развития</li>
           <li>платформы управления командами, обеспечение ясности происходящего: визуализация выполнения работ</li>
           <li>как наглядно вывести ключевые показатели бизнеса, осмысление пройденного, анализ текущего, прозревание будущего</li>
-        </ol><a class="block-olist__btn btn btn_main" href="#register">Начать развитие</a><img class="block-olist__img" src="/img/content/hand.png" alt="Порядок и оцифровка бизнеса"/>
+        </ol><a class="block-olist__btn btn btn_main" href="#register">Начать развитие</a><img class="block-olist__img" src="./img/content/hand.png" alt="Порядок и оцифровка бизнеса"/>
       </div>
     </section>
     <section class="block-interaction">
@@ -82,8 +95,8 @@
         </div>
       </div>
     </section>
-    <section class="block-img-list">
-      <div class="container"><img class="block-img-list__img" src="/img/content/round.png" alt="ПОРЯДОК И ОЦИФРОВКА БИЗНЕСА">
+    <section class="block-img-list" id="results">
+      <div class="container"><img class="block-img-list__img" src="/img/content/round.jpg" alt="ПОРЯДОК И ОЦИФРОВКА БИЗНЕСА">
         <div class="block-img-list__content">
           <h4>Быть обязательно. <br>Потому что <b>вы получите:</b></h4>
           <ul>
@@ -113,12 +126,12 @@
         </ul><a class="btn btn_main" href="#register">Начать развитие</a>
       </div>
     </section>
-    <section class="schedule">
+    <section class="schedule" id="programm">
       <div class="container">
         <h3>Программа мероприятия</h3>
         <ul>
           <li class="schedule-item">
-            <div class="schedule-item__img"><img src="/img/content/schedule1.jpg" alt="Григорий Батухтин"/></div>
+            <div class="schedule-item__img"><img src="./img/content/schedule1.jpg" alt="Григорий Батухтин"/></div>
             <div class="schedule-item__content">
               <div class="schedule-item__content-top">
                 <div class="schedule-item__content-top-left">
@@ -138,7 +151,7 @@
             </div>
           </li>
           <li class="schedule-item">
-            <div class="schedule-item__img"><img src="/img/content/schedule2.jpg" alt="Елена Виноградова"/></div>
+            <div class="schedule-item__img"><img src="./img/content/schedule2.jpg" alt="Елена Виноградова"/></div>
             <div class="schedule-item__content">
               <div class="schedule-item__content-top">
                 <div class="schedule-item__content-top-left">
@@ -158,7 +171,7 @@
             </div>
           </li>
           <li class="schedule-item">
-            <div class="schedule-item__img"><img src="/img/content/schedule3.jpg" alt="Елена Дубровская"/></div>
+            <div class="schedule-item__img"><img src="./img/content/schedule3.jpg" alt="Елена Дубровская"/></div>
             <div class="schedule-item__content">
               <div class="schedule-item__content-top">
                 <div class="schedule-item__content-top-left">
@@ -178,7 +191,7 @@
             </div>
           </li>
           <li class="schedule-item">
-            <div class="schedule-item__img"><img src="/img/content/schedule1.jpg" alt="Григорий Батухтин"/></div>
+            <div class="schedule-item__img"><img src="./img/content/schedule1.jpg" alt="Григорий Батухтин"/></div>
             <div class="schedule-item__content">
               <div class="schedule-item__content-top">
                 <div class="schedule-item__content-top-left">
@@ -198,7 +211,7 @@
             </div>
           </li>
           <li class="schedule-item">
-            <div class="schedule-item__img"><img src="/img/content/schedule1.jpg" alt="Григорий Батухтин"/></div>
+            <div class="schedule-item__img"><img src="./img/content/schedule1.jpg" alt="Григорий Батухтин"/></div>
             <div class="schedule-item__content">
               <div class="schedule-item__content-top">
                 <div class="schedule-item__content-top-left">
@@ -218,7 +231,7 @@
             </div>
           </li>
           <li class="schedule-item">
-            <div class="schedule-item__img"><img src="/img/content/schedule4.jpg" alt="Ответы на вопросы"/></div>
+            <div class="schedule-item__img"><img src="./img/content/schedule4.jpg" alt="Ответы на вопросы"/></div>
             <div class="schedule-item__content">
               <div class="schedule-item__content-top">
                 <div class="schedule-item__content-top-left">
@@ -238,8 +251,34 @@
         </ul>
       </div>
     </section>
+    <section class="block-register" id="register">
+      <div class="container">
+        <div class="block-register__content">
+          <h4>Регистрация на вебинар: <br>“Удаленные команды как источник прибыли”</h4>
+          <div class="block-register__desc">Встреча состоится 23 ноября в 19:00 (Мск)</div><img class="block-register__img" src="/img/content/robot.png" alt="Регистрация на вебинар: “Удаленные команды как источник прибыли”">
+        </div>
+        <div class="block-register__form"><script data-b24-form="inline/36/4s9t0z" data-skip-moving="true">(function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b202041/crm/form/loader_36.js');</script></div>
+      </div>
+    </section>
+    <footer class="footer" id="contacts">
+      <div class="container"><a class="footer__logo" href="/"><img src="img/main-logo.png" alt="Удалённые команды как источники прибыли"/></a>
+        <div class="footer__social">
+          <ul>
+            <li><a href="https://www.facebook.com/g.batuchtin" rel="nofollow" target="_blank"><img src="/img/fb.png" alt="Facebook"/></a></li>
+            <li><a href="https://www.instagram.com/mysuperbrain/" rel="nofollow" target="_blank"><img src="/img/ig.png" alt="Instagram"/></a></li>
+            <li><a href="https://vk.com/batuchtin" rel="nofollow" target="_blank"><img src="/img/vk.png" alt="Вконтакте"/></a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <ul>
+            <li><span>Email:</span><a href="mailto:digital@itstudy.ru">digital@itstudy.ru</a></li>
+            <li><span>Телефон:</span><a href="tel:+79881327628">+7 988 132-76-28</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/demo.js?1637983158822" defer="defer"></script>
-    <script src="js/main.js?1637983158822" defer="defer"></script>
+    <script src="js/demo.js?1638058414805" defer="defer"></script>
+    <script src="js/main.js?1638058414805" defer="defer"></script>
   </body>
 </html>
