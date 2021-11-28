@@ -9,8 +9,8 @@ import resolve from 'rollup-plugin-node-resolve';
 // import commonjs from 'rollup-plugin-commonjs';
 import commonjs from '@rollup/plugin-commonjs';
 // import minify from 'rollup-plugin-babel-minify';
-import minify from 'rollup-plugin-terser';
-import terser from 'gulp-terser';
+import { terser } from 'rollup-plugin-terser';
+//import terser from 'gulp-terser';
 // import babel from 'rollup-plugin-babel';
 import babel from '@rollup/plugin-babel';
 import browserSync from 'browser-sync';
@@ -36,9 +36,10 @@ const buildScripts = () => {
             babel({
                 exclude: 'node_modules/**',
             }),
-            minify({
-                comments: false,
-                sourceMap: false,
+            terser({
+                format: {
+                    comments: "false",
+                },
             }),
             nodeResolve(),
         ]
