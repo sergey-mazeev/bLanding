@@ -1,7 +1,7 @@
 extends main/page_default
 
 block head
-    title Главная страница
+    title Онлайн-практикум по автоматизации бизнеса
 
 block beforeBody
     -bodyClasses.push('front')
@@ -11,40 +11,57 @@ block header
 block content
 
     +title-screen
-    +block-olist
+    section.block-img-list
+        .container
+            img.block-img-list__img(src="./img/content/round.jpg" alt="ПОРЯДОК И ОЦИФРОВКА БИЗНЕСА")
+            .block-img-list__content
+                h4 <b>Что сейчас</b>
+                ul
+                    li сюда текст/содержимое нового блока
+    section.block-img-list#results
+        .container
+            img.block-img-list__img(src="./img/content/round.png" alt="ПОРЯДОК И ОЦИФРОВКА БИЗНЕСА")
+            .block-img-list__content
+                h4 Приглашаем вас на <b>бесплатную онлайн-встречу</b> в формате <b>практикума</b>
+                p Для руководителей и владельцев бизнеса, которые мечтают об эффективной дистанционной команде и хотят совершенствоваться, но устали разрываться между личной жизнью и работой, погрязли в рутине и желают побороть хаос.
+                p Вы узнаете, как:
+                ul
+                    li Управлять бизнесом со смартфона за 2-4 часов в день.
+                    li Сократить расходы минимум на 5% за счет удаленной команды.
+                    li Стать лидером рынка, даже в перегретой нише, благодаря четкой маркетинговой стратегии.
+                    li Контролировать всего 5 ключевых показателей в бизнесе, но при этом быстро масштабироваться и расти.
+                    li Иметь, наконец, время на себя, семью, увлечения и собственное развитие.
+
+                a.btn.btn_main(href="#register") ИДУ на практикум
+
     section.block-interaction
         .container
-            h4.block-interaction__title Интерактив — лучший формат вебинара
+            h4.block-interaction__title Мы сделали участие в практикуме максимально удобным для вас:
             .block-interaction__list
                 ul
                     li
                         img(src="./img/content/interaction1.png", alt="Интерактив — лучший формат вебинара")
-                        p Вы получите доступ в личный кабинет, где пройдете первые шаги по оцифровке бизнеса
+                        p Личный кабинет в проектном офисе. У вас будет каркас задач по оцифровке вашего бизнеса.
                     li
                         img(src="./img/content/interaction2.png", alt="Интерактив — лучший формат вебинара")
-                        p Сильное окружение. В проекте участвуют только те, кто готов работать на результат.
+                        p Во время вебинара вы заполняете анкеты в проектном офисе. Сразу создаете план своего развития!
                     li
                         img(src="./img/content/interaction3.png", alt="Интерактив — лучший формат вебинара")
-                        p Спикеры доступны в личном кабинете в течение 72 часов!
+                        p Общение со спикерами после вебинара через личный кабинет. Ответим на все вопросы.
                     li
                         img(src="./img/content/interaction4.png", alt="Интерактив — лучший формат вебинара")
-                        p Во время интерактива вы создаете свой план цифрового развития
+                        p Полезные знакомства, нетворкинг, смелые идеи и возможности для выхода на новый уровень!
             .block-interaction__desc
-                p Интерактив – это начало проекта.<br>Практические действия в кругу замотивированных в успехе.<br>Развиваемся в сильном окружении с экспертами.
-                p Вас ждет интерактив нацеленный на получение каждым участником своего результата.
-
-    section.block-img-list#results
-        .container
-            img.block-img-list__img(src="./img/content/round.jpg" alt="ПОРЯДОК И ОЦИФРОВКА БИЗНЕСА")
-            .block-img-list__content
-                h4 Быть обязательно. <br>Потому что <b>вы получите:</b>
+                p После практикума вы поймете, как в кратчайшие сроки:
                 ul
-                    li Практические советы от представителей бизнеса, как продавать в постоянно меняющейся реальности
-                    li Знания, как управлять подчиненными из любой точки мира и автоматизировать бизнес-процессы в компании
-                    li Анкету по каждому докладу. Заполнив ее вы увидите свои перспективы развития
-                    li Инструкцию к действию на основе ваших анкет после их обработки
-                    li Час индивидуальной консультации от руководителя Академии Батухтина Григория
-                    li Пошаговый план развития, который останется с вами в проектном офисе
+                    li Нанимать сотрудников на удаленную работу и экономить на зарплате
+                    li Закрыть офис продаж и убрать из расходов коммунальную
+                    li Инвестировать в свой бренд и вкладываться в развитие бизнеса
+            .block-interaction__btn
+                a.btn.btn_main(href="#register") Я иду
+
+    //-+block-olist
+
 
     section.block-bonuses
         .container
@@ -60,9 +77,31 @@ block content
                     img(src="./img/content/bonus3.png" alt="Бонусы для участников")
                     p Сертификат на бесплатную консультацию по настройке бизнес-процессов
 
-            a.btn.btn_main(href="#register") Начать развитие
+            a.btn.btn_main(href="#register") Иду на практикум
 
-    +schedule
+
+    +block-olist-schedule
+
+    section.block-speakers
+        .container
+            h4 Спикеры
+            .speakers-list
+                .speakers-list__item
+                    img(src="./img/content/schedule1.jpg", alt="Григорий Батухтин")
+                    h5 Григорий Батухтин
+                    p Директор Академии Цифровой Экономики
+                .speakers-list__item
+                    img(src="./img/content/schedule2.jpg", alt="Елена Виноградова")
+                    h5 Елена Виноградова
+                    p Эксперт по диджитал маркетингу
+                .speakers-list__item
+                    img(src="./img/content/schedule3.jpg", alt="Елена Дубровская")
+                    h5 Елена Дубровская
+                    p Психолог, коуч
+
+    //-+schedule
+
+
 
     section#register.block-register
         .container
@@ -70,4 +109,4 @@ block content
                 h4 Регистрация на вебинар: <br>“Удаленные команды как источник прибыли”
                 .block-register__desc Встреча состоится 23 ноября в 19:00 (Мск)
                 img.block-register__img(src="./img/content/robot.png" alt="Регистрация на вебинар: “Удаленные команды как источник прибыли”")
-            .block-register__form <script data-b24-form="inline/36/4s9t0z" data-skip-moving="true">(function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b202041/crm/form/loader_36.js');</script>
+            .block-register__form <script data-b24-form="inline/18/auze0c" data-skip-moving="true">(function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b202041/crm/form/loader_18.js');</script>

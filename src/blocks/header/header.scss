@@ -114,6 +114,12 @@
   }
 
   &__contacts {
+    .btn {
+      img {
+        vertical-align: middle;
+        margin-right: 6px;
+      }
+    }
     @media screen and (max-width: 570px) {
       margin-left: auto;
     }

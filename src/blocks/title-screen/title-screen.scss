@@ -34,6 +34,7 @@
     position: relative;
     z-index: 2;
     flex-shrink: 0;
+    align-self: center;
     @media screen and (max-width: 1150px) {
       width: 360px;
     }
@@ -118,11 +119,12 @@
   }
 
   &__title {
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 500;
     line-height: 1.25;
     text-transform: uppercase;
     margin-bottom: 60px;
+    max-width: 700px;
     @media screen and (max-width: 1150px) {
       font-size: 40px;
       margin-bottom: 40px;
@@ -141,6 +143,9 @@
     }
   }
 
+  &__list-desc {
+    font-size: 18px;
+  }
   &__list {
     list-style: none;
     margin: 0;
