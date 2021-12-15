@@ -1127,8 +1127,8 @@ b, strong {
 }
 
 .block-img-list {
-  padding-top: 80px;
-  padding-bottom: 190px;
+  padding-top: 40px;
+  padding-bottom: 180px;
   position: relative;
   overflow: hidden;
 }
@@ -1663,6 +1663,9 @@ b, strong {
 .footer__logo {
   margin-bottom: 26px;
   display: block;
+  width: 51px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer__logo img {
   display: block;
