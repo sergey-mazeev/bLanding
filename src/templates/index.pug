@@ -12,35 +12,36 @@ block content
 
     +title-screen
 
-    section.block-pain
-        .container
-            .block-pain__block.block-pain__block_pain
-                h4 Что сейчас:
-                .content
+    div.bg.bg_1
+        section.block-pain
+            .container
+                .block-pain__block.block-pain__block_pain
+                    h4 Что сейчас:
+                    .content
+                        ul
+                            li Вы работаете по 14 часов ежедневно…<br>Бизнес требует все большей включенности. Вы уже забыли, когда нормально отдыхали и проводили время с семьей.
+                            li Приходится все время держать руку на пульсе, сверять десятки таблиц, общаться в чатах с сотрудниками, контролировать расходы, которые постоянно растут, еще вникать в продажи и маркетинг: слушать отговорки руководителя отдела продаж, самому вычислять, какая реклама приносит результат, а какая нет…
+                            li Бизнес рискует превратиться в черную дыру, которая высасывает из вас силы, нервы, деньги и время.
+                .block-pain__block.block-pain__block_solution
+                    h4 Но можно по-другому!
+                    .content
+                        p Внедрите автоматизацию в ваш отдел продаж и работайте полностью удаленно с полным прозрачным контролем всей вашей команды, даже если в компании больше 30 человек!
+
+        section.block-img-list#results
+            .container
+                img.block-img-list__img(src="./img/content/block-img.png" alt="ПОРЯДОК И ОЦИФРОВКА БИЗНЕСА")
+                .block-img-list__content
+                    h4 Приглашаем вас на <b>бесплатную онлайн-встречу</b> в формате <b>практикума</b>
+                    p: strong Для руководителей и владельцев бизнеса, которые мечтают об эффективной дистанционной команде и хотят совершенствоваться, но устали разрываться между личной жизнью и работой, погрязли в рутине и желают побороть хаос.
+                    p: strong Вы узнаете, как:
                     ul
-                        li Вы работаете по 14 часов ежедневно…<br>Бизнес требует все большей включенности. Вы уже забыли, когда нормально отдыхали и проводили время с семьей.
-                        li Приходится все время держать руку на пульсе, сверять десятки таблиц, общаться в чатах с сотрудниками, контролировать расходы, которые постоянно растут, еще вникать в продажи и маркетинг: слушать отговорки руководителя отдела продаж, самому вычислять, какая реклама приносит результат, а какая нет…
-                        li Бизнес рискует превратиться в черную дыру, которая высасывает из вас силы, нервы, деньги и время.
-            .block-pain__block.block-pain__block_solution
-                h4 Но можно по-другому!
-                .content
-                    p Внедрите автоматизацию в ваш отдел продаж и работайте полностью удаленно с полным прозрачным контролем всей вашей команды, даже если в компании больше 30 человек!
+                        li Управлять бизнесом со смартфона за 2-4 часов в день.
+                        li Сократить расходы минимум на 5% за счет удаленной команды.
+                        li Стать лидером рынка, даже в перегретой нише, благодаря четкой маркетинговой стратегии.
+                        li Контролировать всего 5 ключевых показателей в бизнесе, но при этом быстро масштабироваться и расти.
+                        li Иметь, наконец, время на себя, семью, увлечения и собственное развитие.
 
-    section.block-img-list#results
-        .container
-            img.block-img-list__img(src="./img/content/round.png" alt="ПОРЯДОК И ОЦИФРОВКА БИЗНЕСА")
-            .block-img-list__content
-                h4 Приглашаем вас на <b>бесплатную онлайн-встречу</b> в формате <b>практикума</b>
-                p Для руководителей и владельцев бизнеса, которые мечтают об эффективной дистанционной команде и хотят совершенствоваться, но устали разрываться между личной жизнью и работой, погрязли в рутине и желают побороть хаос.
-                p Вы узнаете, как:
-                ul
-                    li Управлять бизнесом со смартфона за 2-4 часов в день.
-                    li Сократить расходы минимум на 5% за счет удаленной команды.
-                    li Стать лидером рынка, даже в перегретой нише, благодаря четкой маркетинговой стратегии.
-                    li Контролировать всего 5 ключевых показателей в бизнесе, но при этом быстро масштабироваться и расти.
-                    li Иметь, наконец, время на себя, семью, увлечения и собственное развитие.
-
-                a.btn.btn_main(href="#register") ИДУ на практикум
+                    a.btn.btn_main(href="#register") ИДУ на практикум
 
     section.block-interaction
         .container
@@ -65,7 +66,7 @@ block content
                     li Нанимать сотрудников на удаленную работу и экономить на зарплате
                     li Закрыть офис продаж и убрать из расходов коммунальную
                     li Инвестировать в свой бренд и вкладываться в развитие бизнеса
-            .block-interaction__btn
+            //-.block-interaction__btn
                 a.btn.btn_main(href="#register") Я иду
 
     //-+block-olist
@@ -85,36 +86,38 @@ block content
                     img(src="./img/content/bonus3.png" alt="Бонусы для участников")
                     p Сертификат на бесплатную консультацию по настройке бизнес-процессов
 
-            a.btn.btn_main(href="#register") Иду на практикум
+            a.btn.btn_main(href="#register") Я ИДУ
 
 
     +block-olist-schedule
 
-    section.block-speakers
-        .container
-            h4 Спикеры
-            .speakers-list
-                .speakers-list__item
-                    img(src="./img/content/schedule1.jpg", alt="Григорий Батухтин")
-                    h5 Григорий Батухтин
-                    p Директор Академии Цифровой Экономики
-                .speakers-list__item
-                    img(src="./img/content/schedule2.jpg", alt="Елена Виноградова")
-                    h5 Елена Виноградова
-                    p Эксперт по диджитал маркетингу
-                .speakers-list__item
-                    img(src="./img/content/schedule3.jpg", alt="Елена Дубровская")
-                    h5 Елена Дубровская
-                    p Психолог, коуч
-
-    //-+schedule
-
+    .bg.bg_2
+        section.block-speakers
+            .container
+                h4 Спикеры
+                .speakers-list
+                    .speakers-list__item
+                        img(src="./img/content/schedule1.png", alt="Григорий Батухтин")
+                        h5 Григорий Батухтин
+                        p Директор Академии Цифровой Экономики
+                    .speakers-list__item
+                        img(src="./img/content/schedule2.png", alt="Елена Виноградова")
+                        h5 Елена Виноградова
+                        p Эксперт по диджитал маркетингу
+                    .speakers-list__item
+                        img(src="./img/content/schedule3.png", alt="Елена Дубровская")
+                        h5 Елена Дубровская
+                        p Психолог, коуч
 
 
-    section#register.block-register
-        .container
-            .block-register__content
-                h4 Регистрация на вебинар: <br>“Удаленные команды как источник прибыли”
-                .block-register__desc Встреча состоится 23 ноября в 19:00 (Мск)
-                img.block-register__img(src="./img/content/robot.png" alt="Регистрация на вебинар: “Удаленные команды как источник прибыли”")
-            .block-register__form <script data-b24-form="inline/18/auze0c" data-skip-moving="true">(function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b202041/crm/form/loader_18.js');</script>
+
+        section#register.block-register.block-register_1
+            .container
+                .block-register__content
+                    h4 Регистрация на вебинар: <br>“Удаленные команды как источник прибыли”
+                    .block-register__desc Встреча состоится 23 ноября в 19:00 (Мск)
+                    //-img.block-register__img(src="./img/content/robot.png" alt="Регистрация на вебинар: “Удаленные команды как источник прибыли”")
+                .block-register__form <script data-b24-form="inline/18/auze0c" data-skip-moving="true">(function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b202041/crm/form/loader_18.js');</script>
+        +footer
+
+block footer
